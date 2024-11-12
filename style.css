@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+/* Inicio Section */
+.Inicio {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(/imagenes/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+}
+
+.Inicio h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.Inicio p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Sección Nosotros */
+.nosotros {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.nosotros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.nosotros p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Productos */
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.productos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.productos div {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.productos img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.productos h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.productos p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Reseñas */
+.reviews, .review-content {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Usando Grid para las reviews */
+.review-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    justify-items: center;
+}
+
+.review-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.in-box {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bx-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bxx-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.bxx-text h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.ratings a {
+    color: gold;
+    margin-right: 5px;
+}
+
+
+/* Form */
+.contacto {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contacto h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: none;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* Ocultar los elementos del menú en pantallas pequeñas */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%; 
+        gap: 10px; 
+    }
+
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 15px 20px; 
+        width: 100%; 
+        text-align: center; 
+    }
+
+}
